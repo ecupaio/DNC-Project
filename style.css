@@ -7,6 +7,8 @@ p,div {
 	font-family: 'Lato', sans-serif;
 	color: #0f2446;
 }
+/*Body*/
+/*Body Content*/
 .body-text {
 	font-size: 13pt;
 }
@@ -14,6 +16,7 @@ p,div {
 	font-size: 30pt;
 	color: #00aef3;
 }
+/*Body Attachment*/
 .attachment-title {
 	font-size: 24pt;
 	color: #0f2446;
