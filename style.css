@@ -1,12 +1,20 @@
 /*Fonts*/
 h1,h2,h3,h4,h5 {
 	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
 }
 p,div {
 	font-family: 'Lato', sans-serif;
+	color: #0f2446;
 }
 .body-text {
 	font-size: 13pt;
 }
-.
-
+.body-title {
+	font-size: 30pt;
+	color: #00aef3;
+}
+.attachment-title {
+	font-size: 24pt;
+	color: #0f2446;
+}
