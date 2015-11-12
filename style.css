@@ -7,6 +7,11 @@ p,div {
 	font-family: 'Lato', sans-serif;
 	color: #0f2446;
 }
+/*Header*/
+.header-logo {
+	text-align: center;
+
+}
 /*Body*/
 /*Body Content*/
 .body-text {
