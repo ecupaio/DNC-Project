@@ -41,10 +41,10 @@ p,div {
     -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
-#navigation ul li a:hover {
+#navigation ul li:hover {
 	text-decoration: none;
 }
-#navigation ul li a:after {
+#navigation ul li:after {
 	content: '';
 	
     display: block;
@@ -63,7 +63,7 @@ p,div {
     -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
-#navigation ul li a:hover:after {
+#navigation ul li:hover:after {
 	content: url(files/alt-logo.png);
 	display: block;
     text-align: center;
@@ -103,9 +103,7 @@ body {
 	display: table;	
 	padding: 1em;
 }
-.show-hide {
-	display: none;
-}
+
 .content-text {
 	font-size: 13pt;
 }
