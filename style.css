@@ -10,19 +10,144 @@ p,div {
 /*Header*/
 .header-logo {
 	text-align: center;
+	background: #fff;
+	padding: 2em 0;
+}
+/* Navigation */
+#navigation {
+	margin: 1em 0 2em;
 
 }
+
+#navigation ul {
+	border-bottom: #fff thick solid;
+	text-align: center;
+	padding: 0 2em;
+	color: #fff;
+	height: 3em;
+}
+#navigation ul li {
+	list-style-position: inside;
+	text-align: center;
+	font-size: 14pt;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	list-style-type: none;
+}
+#navigation li a {
+	color: #fff;
+	-webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+#navigation ul li a:hover {
+	text-decoration: none;
+}
+#navigation ul li a:after {
+	content: '';
+	
+    display: block;
+    text-align: center;
+    position: relative;
+    top: 15;
+    left: 47%;
+    width: 25px;
+    height: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    background-color: #fff;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+#navigation ul li a:hover:after {
+	content: url(files/alt-logo.png);
+	display: block;
+    text-align: center;
+    position: relative;
+    top: 15;
+    left: 47%;
+    width: 25px;
+    height: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    background-color: #fff;
+}   
 /*Body*/
-/*Body Content*/
-.body-text {
+body {
+	background: url('files/backgroundimage.jpg') no-repeat ;
+	background-size: cover;
+	height: 100%;
+}
+/*Main Container*/
+#main-container {
+	min-height: 80%;
+	height: auto;
+}
+/*Content*/
+.content {
+	padding: 0 1em;
+	display: table-cell;
+	vertical-align: middle;
+
+}
+/*Content Body*/
+.content-body {
+	background: #fff;
+	margin: 2em 3em;
+	height: 80%;
+	display: table;	
+	padding: 1em;
+}
+.show-hide {
+	display: none;
+}
+.content-text {
 	font-size: 13pt;
 }
-.body-title {
+.content-title {
 	font-size: 30pt;
 	color: #00aef3;
 }
-/*Body Attachment*/
-.attachment-title {
-	font-size: 24pt;
+
+/*Content Attachment*/
+.content-attachment {
+	display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+
+}
+.attachment-title  h5 {
+	font-size: 14pt;
 	color: #0f2446;
+}
+/* Footer */
+#footer {
+	background: #0f2446;
+	color: #fff;
+	display: table;
+	width: 100%;
+	bottom: 0px;
+	min-height: 20%;
+	position: relative;
+	clear: both;
+}
+.footer-content {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding: 3em 0;
+}
+.footer-content h2 {
+	font-size: 14pt;
+	margin: 0;
+	color: #fff;
+}
+/* Active */
+.active {
+	display: table;	
 }

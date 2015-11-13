@@ -1,5 +1,13 @@
-<html>
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>    
     <head>
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <!-- My Script -->
+        <script type="text/javascript" src="script.js"></script>
+        
         <!-- Bootstrap CSS -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
         <!-- Bootstrap JS -->
@@ -8,31 +16,116 @@
         <link href='https://fonts.googleapis.com/css?family=Oswald|Lato' rel='stylesheet' type='text/css'>
         <!-- My CSS -->
         <link rel="stylesheet" type="text/css" href="style.css">
+        
     </head>
-    <!-- Header -->
-    <header id="header">
-        <div class="header-logo"><img src="files/Host2016logo.png"></div>
-        <div class="navigation"></div>
-    </header>
-    <!-- Body -->
+    
     <body>
-    	<!-- Welcome -->
-        <div class="content">
-            <div class="content-body">
-                <div class="body-title"><h2>Welcome from the Chairman</h2></div>
-                <div class="body-text">
-                    <p>Lorem ipsum dolor sit amet, ut urbanitas abhorreant pro, ad meliore oportere mediocrem nam, te pri meis brute inermis. Duo equidem praesent ea, sed id fuisset alienum. Mea id diam option. Etiam explicari nam te, sed at iusto constituto. Quo ubique sententiae cu, erant everti dolores ad his. Cu probo erant necessitatibus cum, ne vim tantas scaevola intellegat.</p>
-                    <p>Putant suscipiantur consequuntur quo ei, ludus homero appareat id vis, sit ex unum luptatum. Blandit democritum definitionem vis ut, velit audire aliquam duo at. Alienum definitionem concludaturque usu ne, te has sanctus eligendi convenire. Vel tincidunt abhorreant cu, sint convenire mediocrem vel cu.</p>
-                    <p>Sea et falli suscipit. Duis eirmod conclusionemque nec ei, eu per harum accusamus, vel ceteros tibique temporibus eu. Pri mentitum conceptam expetendis ut, vix labore reformidans an, laudem albucius laboramus ius ad. Quis fabulas imperdiet eu est, qui putent prompta reformidans ei, no partiendo efficiantur conclusionemque nec. Mediocrem moderatius eu qui, eu enim congue perpetua eam, exerci perfecto atomorum ne has.</p>
-                    <p>Ei pro maiorum placerat invenire, ut has veniam debitis, suas verterem quaestio ius id. Te diam affert animal pro. Cu minimum maluisset mea, meis inimicus ei eos. Sea alii inani nobis cu. Usu commune theophrastus ut, et petentium scribentur pri, sit an adhuc doming definitionem.</p>
+        <!-- Header -->
+        <header id="header">
+            <!-- Logo -->
+            <div class="header-logo">
+                <img src="files/Host2016logo.png">
+            </div>
+            <!-- Navigation -->
+                <ul id="navigation">
+                    <li class="col-sm-4"><a href="#page1">Welcome</a>
+                    </li>
+                    <li class="col-sm-4"><a href="#page2">Paperless Bid</a>
+                    </li>
+                    <li class="col-sm-4"><a href="#page3">Submitting a Proposal</a>
+                    </li>
+                </ul>
+            
+        </header>
+        <div id="main-container">
+            <!-- Welcome -->
+            <div id="page1" class="show-hide content-body" rel="1">
+                <!-- Welcome Content-->
+                <div class="content col-sm-9">
+                    <!-- Welcome Title-->
+                    <div class="content-title">
+                        <h2>Welcome from the Chairman</h2>
+                    </div>
+                    <!-- Welcome Text-->
+                    <div class="content-text">
+                        <p>Lorem ipsum dolor sit amet, ut urbanitas abhorreant pro, ad meliore oportere mediocrem nam, te pri meis brute inermis. Duo equidem praesent ea, sed id fuisset alienum. Mea id diam option. Etiam explicari nam te, sed at iusto constituto. Quo ubique sententiae cu, erant everti dolores ad his. Cu probo erant necessitatibus cum, ne vim tantas scaevola intellegat.</p>
+                        <p>Putant suscipiantur consequuntur quo ei, ludus homero appareat id vis, sit ex unum luptatum. Blandit democritum definitionem vis ut, velit audire aliquam duo at. Alienum definitionem concludaturque usu ne, te has sanctus eligendi convenire. Vel tincidunt abhorreant cu, sint convenire mediocrem vel cu.</p>
+                        <p>Sea et falli suscipit. Duis eirmod conclusionemque nec ei, eu per harum accusamus, vel ceteros tibique temporibus eu. Pri mentitum conceptam expetendis ut, vix labore reformidans an, laudem albucius laboramus ius ad. Quis fabulas imperdiet eu est, qui putent prompta reformidans ei, no partiendo efficiantur conclusionemque nec. Mediocrem moderatius eu qui, eu enim congue perpetua eam, exerci perfecto atomorum ne has.</p>
+                        <p>Ei pro maiorum placerat invenire, ut has veniam debitis, suas verterem quaestio ius id. Te diam affert animal pro. Cu minimum maluisset mea, meis inimicus ei eos. Sea alii inani nobis cu. Usu commune theophrastus ut, et petentium scribentur pri, sit an adhuc doming definitionem.</p>
+                    </div>
+                </div>
+                <!-- Welcome Attachment-->
+                <div class="content-attachment col-sm-3">
+                    <!-- Attachment Image -->
+                    <div class="attachment-img">
+                        <img src="files/downloadRFP.png">
+                    </div>
+                    <!-- Attachment Title -->
+                    <div class="attachment-title">
+                        <h5>Download RFP</h5>
+                    </div>
                 </div>
             </div>
-            <div class="content-attachment">
-                <div class="attachment-title"><h5>Download RFP</h5></div>
-                <div class="attachment-img"><img src="files/downloadRFP.png"></div>
+            <!-- Paperless Bid -->
+            <div id="page2" class="show-hide content-body" rel="2">
+                <!-- Paperless Content-->
+                <div class="content col-sm-9">
+                    <!-- Paperless Title-->
+                    <div class="content-title">
+                        <h2>Paperless Bid</h2>
+                    </div>
+                    <!-- Paperless Text-->
+                    <div class="content-text">
+                        <p>Lorem ipsum dolor sit amet, ut urbanitas abhorreant pro, ad meliore oportere mediocrem nam, te pri meis brute inermis. Duo equidem praesent ea, sed id fuisset alienum. Mea id diam option. Etiam explicari nam te, sed at iusto constituto. Quo ubique sententiae cu, erant everti dolores ad his. Cu probo erant necessitatibus cum, ne vim tantas scaevola intellegat.</p>
+                        <p>Putant suscipiantur consequuntur quo ei, ludus homero appareat id vis, sit ex unum luptatum. Blandit democritum definitionem vis ut, velit audire aliquam duo at. Alienum definitionem concludaturque usu ne, te has sanctus eligendi convenire. Vel tincidunt abhorreant cu, sint convenire mediocrem vel cu.</p>
+                        <p>Sea et falli suscipit. Duis eirmod conclusionemque nec ei, eu per harum accusamus, vel ceteros tibique temporibus eu. Pri mentitum conceptam expetendis ut, vix labore reformidans an, laudem albucius laboramus ius ad. Quis fabulas imperdiet eu est, qui putent prompta reformidans ei, no partiendo efficiantur conclusionemque nec. Mediocrem moderatius eu qui, eu enim congue perpetua eam, exerci perfecto atomorum ne has.</p>
+                        <p>Ei pro maiorum placerat invenire, ut has veniam debitis, suas verterem quaestio ius id. Te diam affert animal pro. Cu minimum maluisset mea, meis inimicus ei eos. Sea alii inani nobis cu. Usu commune theophrastus ut, et petentium scribentur pri, sit an adhuc doming definitionem.</p>
+                    </div>
+                </div>
+                <!-- Paperless Attachment-->
+                <div class="content-attachment col-sm-3">
+                    <!-- Paperless Image -->
+                    <div class="attachment-img">
+                        <img src="files/downloadRFP.png">
+                    </div>
+                    <!-- Paperless Title -->
+                    <div class="attachment-title">
+                        <h5>Download RFP</h5>
+                    </div>
+                </div>
+            </div>
+            <div id="page3" class="show-hide content-body" rel="3">
+                <!-- Paperless Content-->
+                <div class="content col-sm-9">
+                    <!-- Paperless Title-->
+                    <div class="content-title">
+                        <h2>Submitting a Proposal</h2>
+                    </div>
+                    <!-- Paperless Text-->
+                    <div class="content-text">
+                        <p>Lorem ipsum dolor sit amet, ut urbanitas abhorreant pro, ad meliore oportere mediocrem nam, te pri meis brute inermis. Duo equidem praesent ea, sed id fuisset alienum. Mea id diam option. Etiam explicari nam te, sed at iusto constituto. Quo ubique sententiae cu, erant everti dolores ad his. Cu probo erant necessitatibus cum, ne vim tantas scaevola intellegat.</p>
+                        <p>Putant suscipiantur consequuntur quo ei, ludus homero appareat id vis, sit ex unum luptatum. Blandit democritum definitionem vis ut, velit audire aliquam duo at. Alienum definitionem concludaturque usu ne, te has sanctus eligendi convenire. Vel tincidunt abhorreant cu, sint convenire mediocrem vel cu.</p>
+                        <p>Sea et falli suscipit. Duis eirmod conclusionemque nec ei, eu per harum accusamus, vel ceteros tibique temporibus eu. Pri mentitum conceptam expetendis ut, vix labore reformidans an, laudem albucius laboramus ius ad. Quis fabulas imperdiet eu est, qui putent prompta reformidans ei, no partiendo efficiantur conclusionemque nec. Mediocrem moderatius eu qui, eu enim congue perpetua eam, exerci perfecto atomorum ne has.</p>
+                        <p>Ei pro maiorum placerat invenire, ut has veniam debitis, suas verterem quaestio ius id. Te diam affert animal pro. Cu minimum maluisset mea, meis inimicus ei eos. Sea alii inani nobis cu. Usu commune theophrastus ut, et petentium scribentur pri, sit an adhuc doming definitionem.</p>
+                    </div>
+                </div>
+                <!-- Proposal Attachment-->
+                <div class="content-attachment col-sm-3">
+                    <!-- Proposal Image -->
+                    <div class="attachment-img">
+                        <img src="files/downloadRFP.png">
+                    </div>
+                    <!-- Proposal Title -->
+                    <div class="attachment-title">
+                        <h5>Download RFP</h5>
+                    </div>
+                </div>
             </div>
         </div>
+        <footer id="footer">
+            <div class="footer-content">
+                 <h2>Copyright Info</h2>
+            </div>
+        </footer>
     </body>
-    <footer id="footer"></footer>
-
 </html>
