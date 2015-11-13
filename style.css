@@ -63,7 +63,7 @@ p,div {
     -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
-#navigation ul li:hover:after {
+#navigation ul li .active:hover:after, #navigation ul li:active:after {
 	content: url(files/alt-logo.png);
 	display: block;
     text-align: center;
@@ -91,19 +91,23 @@ body {
 /*Content*/
 .content {
 	padding: 0 1em;
-	display: table-cell;
+	display: inline-block;
 	vertical-align: middle;
-
 }
 /*Content Body*/
 .content-body {
 	background: #fff;
 	margin: 2em 3em;
 	height: 80%;
-	display: table;	
 	padding: 1em;
+	display: inline-block;
 }
-
+.content:before {
+  content: '';
+  display: inline-block;
+  height: 100%; 
+  vertical-align: middle;
+}  
 .content-text {
 	font-size: 13pt;
 }
@@ -114,10 +118,9 @@ body {
 
 /*Content Attachment*/
 .content-attachment {
-	display: table-cell;
+	display: inline-block;
     vertical-align: middle;
     text-align: center;
-
 }
 .attachment-title  h5 {
 	font-size: 14pt;
@@ -145,7 +148,13 @@ body {
 	margin: 0;
 	color: #fff;
 }
-/* Active */
-.active {
-	display: table;	
+/* Carousel Overrides*/
+.carousel-control {
+	width: 3em;
+}
+.carousel-control.left,.carousel-control.right {
+	background-image: none;
+}
+.carousel-inner > .item {
+	padding: 0 1em;
 }

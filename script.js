@@ -1,6 +1,7 @@
+//Set Carousel Interval  
 $(function(){
-$('.carousel').carousel({
-      interval: false,
+	$('.carousel').carousel({
+		interval: false,
     });
-$('.carousel-control.right').trigger('click');
+	$('.carousel-control.right').trigger('click');
 });
