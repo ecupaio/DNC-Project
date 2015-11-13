@@ -19,14 +19,14 @@ p,div {
 
 }
 
-#navigation ul {
+#navigation ol {
 	border-bottom: #fff thick solid;
 	text-align: center;
 	padding: 0 2em;
 	color: #fff;
 	height: 3em;
 }
-#navigation ul li {
+#navigation ol li {
 	list-style-position: inside;
 	text-align: center;
 	font-size: 14pt;
@@ -36,17 +36,12 @@ p,div {
 }
 #navigation li a {
 	color: #fff;
-	-webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
 }
-#navigation ul li:hover {
+#navigation ol li:hover {
 	text-decoration: none;
 }
-#navigation ul li:after {
+#navigation ol li:after {
 	content: '';
-	
     display: block;
     text-align: center;
     position: relative;
@@ -58,12 +53,8 @@ p,div {
     -webkit-border-radius: 25px;
     border-radius: 25px;
     background-color: #fff;
-    -webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
 }
-#navigation ul li .active:hover:after, #navigation ul li:active:after {
+#navigation ol li.active:after, #navigation ul li:hover:after {
 	content: url(files/alt-logo.png);
 	display: block;
     text-align: center;
@@ -76,23 +67,22 @@ p,div {
     -webkit-border-radius: 25px;
     border-radius: 25px;
     background-color: #fff;
-}   
+} 
 /*Body*/
-body {
+html,body {
 	background: url('files/backgroundimage.jpg') no-repeat ;
 	background-size: cover;
 	height: 100%;
+	margin:0;
+	padding:0;
 }
-/*Main Container*/
-#main-container {
-	min-height: 80%;
-	height: auto;
-}
+
+
 /*Content*/
 .content {
 	padding: 0 1em;
-	display: inline-block;
 	vertical-align: middle;
+	display: inline-block;
 }
 /*Content Body*/
 .content-body {
@@ -102,12 +92,7 @@ body {
 	padding: 1em;
 	display: inline-block;
 }
-.content:before {
-  content: '';
-  display: inline-block;
-  height: 100%; 
-  vertical-align: middle;
-}  
+
 .content-text {
 	font-size: 13pt;
 }
@@ -115,12 +100,15 @@ body {
 	font-size: 30pt;
 	color: #00aef3;
 }
-
+.content-title h2 {
+	margin-top: 0;
+}
 /*Content Attachment*/
 .content-attachment {
 	display: inline-block;
     vertical-align: middle;
     text-align: center;
+    margin: auto 0;
 }
 .attachment-title  h5 {
 	font-size: 14pt;
@@ -157,4 +145,11 @@ body {
 }
 .carousel-inner > .item {
 	padding: 0 1em;
+}
+.carousel {
+	min-height: 80%;
+	height: auto;
+}
+.carousel-inner {
+	height: 100%;
 }

@@ -1,0 +1,28 @@
+#navigation ul li:after {
+	content: '';
+    display: block;
+    text-align: center;
+    position: relative;
+    top: 15;
+    left: 47%;
+    width: 25px;
+    height: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+#navigation ul li .active:hover:after, #navigation ul li:active:after {
+	content: url(files/alt-logo.png);
+	display: block;
+    text-align: center;
+    position: relative;
+    top: 15;
+    left: 47%;
+    width: 25px;
+    height: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    background-color: #fff;
+} 
