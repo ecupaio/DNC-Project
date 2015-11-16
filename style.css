@@ -92,9 +92,10 @@ a:hover {
 html,body {
 	background: url('files/backgroundimage.jpg') repeat ;
 	background-size: cover;
-	height: 100%;
+	min-height: 100%;
 	margin:0;
 	padding:0;
+	position: relative;
 }
 #main-body {
 	margin-bottom: 1em;
@@ -137,10 +138,15 @@ html,body {
 	display: inline-block;
     vertical-align: middle;
     text-align: center;
-    margin: auto 0;
+    
     text-align: center;
     float: none;
     width: 24%;
+}
+@media (max-width: 768px) {
+	.content-attachment {
+		width: 100%;
+	}	
 }
 .attachment-img {
 	display: inline-block;
