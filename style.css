@@ -92,6 +92,7 @@ a:hover {
 html,body {
 	background: url('files/backgroundimage.jpg') repeat ;
 	background-size: cover;
+	background-position: center;
 	height: 100%;
 	margin:0;
 	padding:0;
