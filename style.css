@@ -97,8 +97,7 @@ html,body {
 	padding:0;
 }
 #main-body {
-	min-height: 80%;
-	
+	margin-bottom: 1em;
 }	
 
 /*Item Body*/
@@ -157,10 +156,9 @@ html,body {
 	color: #fff;
 	display: table;
 	width: 100%;
-	bottom: 0px;
-	min-height: 20%;
-	position: relative;
-	clear: both;
+	
+	
+	
 }
 .footer-content {
 	display: table-cell;
@@ -192,7 +190,4 @@ html,body {
 .carousel-inner > .item {
 	padding: 0 1em;
 }
-.carousel-inner,.carousel,.item,.container,.fill {
-  height:100%;
-}  
 .
