@@ -92,13 +92,14 @@ a:hover {
 html,body {
 	background: url('files/backgroundimage.jpg') repeat ;
 	background-size: cover;
-	min-height: 100%;
+	height: 100%;
 	margin:0;
 	padding:0;
 	position: relative;
 }
 #main-body {
 	margin-bottom: 1em;
+	min-height: 80%;
 }	
 
 /*Item Body*/
@@ -162,9 +163,9 @@ html,body {
 	color: #fff;
 	display: table;
 	width: 100%;
-	
-	
-	
+	position: relative;
+	bottom: 0;
+	clear: both;
 }
 .footer-content {
 	display: table-cell;
@@ -195,5 +196,11 @@ html,body {
 }
 .carousel-inner > .item {
 	padding: 0 1em;
+	height: 100%
 }
-.
+.carousel {
+	height: 100vh;
+}
+.carousel-inner {
+	height: 100%;
+}
