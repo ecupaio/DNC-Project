@@ -196,11 +196,7 @@ html,body {
 }
 .carousel-inner > .item {
 	padding: 0 1em;
-	height: 100%
 }
-.carousel {
-	height: 100vh;
-}
-.carousel-inner {
+.carousel, .carousel-inner, .item {
 	height: 100%;
 }
